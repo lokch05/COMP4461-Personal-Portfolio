@@ -1,11 +1,9 @@
 import Head from "next/head";
 import * as React from "react";
 import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
-import Container from "@mui/material/Container";
-import Button from "@mui/material/Button";
+import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 
 export default function Home() {
@@ -18,23 +16,32 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <Card sx={{ maxWidth: 350, mt: 5, ml: "35%" }}>
-          <CardMedia
-            component="img"
-            height="100%"
-            image="Picture1.jpg"
-            alt="Cheuk Hong LOK"
-          />
-          <CardContent>
-            <Typography gutterBottom variant="h5" component="div">
-              Cheuk Hong LOK
-            </Typography>
-            <Typography variant="body2" color="text.secondary">
-              A Full-Time Student Majoring in Computer Engineering at The Hong
-              Kong University of Science and Technology
-            </Typography>
-          </CardContent>
-        </Card>
+        <Grid
+          container
+          spacing={0}
+          direction="column"
+          alignItems="center"
+          justifyContent="center"
+          style={{ minHeight: "85vh" }}
+        >
+          <Card sx={{ maxWidth: 350 }}>
+            <CardMedia
+              component="img"
+              height="100%"
+              image="Picture1.jpg"
+              alt="Cheuk Hong LOK"
+            />
+            <CardContent sx={{ textAlign: "center" }}>
+              <Typography gutterBottom variant="h4" component="div">
+                Cheuk Hong LOK
+              </Typography>
+              <Typography variant="body2" color="text.secondary">
+                A Full-Time Student Majoring in Computer Engineering at The Hong
+                Kong University of Science and Technology
+              </Typography>
+            </CardContent>
+          </Card>
+        </Grid>
       </main>
     </div>
   );
