@@ -14,7 +14,11 @@ import MenuItem from "@mui/material/MenuItem";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
-const pages = ["About Me", "Team", "Projects"];
+const pages = [
+  { key: "About Me", href: "/" },
+  { key: "Team", href: "/" },
+  { key: "Projects", href: "/projects" },
+];
 
 const Navbar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -41,7 +45,6 @@ const Navbar = () => {
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
               size="large"
-              aria-label="account of current user"
               aria-controls="menu-appbar"
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
@@ -68,21 +71,28 @@ const Navbar = () => {
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                <MenuItem key={page.key} onClick={handleCloseNavMenu}>
+                  <Link
+                    textAligment="center"
+                    key={page.key}
+                    href={page.href}
+                    underline="none"
+                  >
+                    {page.key}
+                  </Link>
                 </MenuItem>
               ))}
             </Menu>
           </Box>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
-              <Link key={page} href="#" underline="none">
+              <Link key={page.key} href={page.href} underline="none">
                 <Button
-                  key={page}
+                  key={page.key}
                   onClick={handleCloseNavMenu}
                   sx={{ my: 2, color: "white", display: "block" }}
                 >
-                  {page}
+                  {page.key}
                 </Button>
               </Link>
             ))}
