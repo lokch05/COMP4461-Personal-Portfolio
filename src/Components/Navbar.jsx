@@ -16,7 +16,6 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 const pages = [
   { key: "About Me", href: "/" },
-  { key: "Team", href: "/" },
   { key: "Projects", href: "/projects" },
 ];
 
