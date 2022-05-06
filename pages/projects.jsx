@@ -562,6 +562,19 @@ export default function Projects() {
                 <img width={"50%"} src="/Assets/Project3/Evaluation2.jpg" />
               </Stack>
               <p>
+                <h2>My contribution</h2>
+              </p>
+              <p>
+                First, I was responsible for the empathize part in which I did a
+                research looking into what most people are suffering during this
+                COVID pandemic. Next, I looked into the supply and demand for
+                party rooms in Hong Kong to help evaluate the feasibility of the
+                project. After that, I suggested making a sofa in the party room
+                to let people watch a movie or play games together. Lastly, I
+                picked the slideshow template which is suitable for our
+                project&apos;s theme.
+              </p>
+              <p>
                 <h2>Reflection</h2>
               </p>
               <p>
