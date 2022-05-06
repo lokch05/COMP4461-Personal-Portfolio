@@ -61,7 +61,7 @@ export default function Projects() {
           <Tabs value={value} onChange={handleChange}>
             <Tab label="Project One" {...a11yProps(0)} />
             <Tab label="Project Two" {...a11yProps(1)} />
-            <Tab label="Project Three" {...a11yProps(2)} disabled />
+            <Tab label="Project Three" {...a11yProps(2)} />
           </Tabs>
         </Box>
         <TabPanel value={value} index={0}>
@@ -414,7 +414,173 @@ export default function Projects() {
           </Typography>
         </TabPanel>
         <TabPanel value={value} index={2}>
-          Item Three
+          <Typography>
+            <div style={{ marginTop: "-20px" }}>
+              <h1>
+                <p>
+                  {
+                    '"Party on Cloud Nine — an interactive VR party room for young people during COVID pandemic"'
+                  }
+                </p>
+              </h1>
+              <p>
+                <h2>Needfindings</h2>
+              </p>
+              <p>
+                Since it is a project about Virtual Reality {"(VR)"} for remote
+                together, we sought to offer people an interactive and
+                immersable VR experience for them to have fun together. We
+                investigated the age divisions of the people who suffered from
+                anxiety and depressive disorder during COVID pandemic, and we
+                found that young people are more prone to depression. One of the
+                main reason behind this could be young people tend to overthink
+                when they are alone at home and have nothing to do. Hanging out
+                with friends can help distract young people from overthinking
+                and they can also have fun in the process. Party rooms have
+                always been Hong Kong young people&apos;s go-to. However, many
+                party rooms were forcibly closed due to the COVID restrictions.
+                Before we started the project, we had looked into the demand for
+                party rooms. We found that the demand for party rooms is
+                increasing after the 5th wave of COVID pandemic in Hong Kong,
+                and the popularity of party rooms will reach its peak. In view
+                of the above factors, we decided to build a virtual party room
+                for young Hong Kong people to have fun with friends.
+              </p>
+              <Stack direction={"row"}>
+                <img
+                  width="50%"
+                  src="https://lh3.googleusercontent.com/VvX1izK3bygYefdFb0Aji_5aM0lk0ADOXCaSpWokr2795826hjs9LaenMp2m48pbPVHc2vw5MVBs6oKUeHFS8U6G6RC5d0R-6JWyOGeGqdW1LcCJEUpjql_we0ZZUnNmT9CIDBmqz3FUhN8euDhd3A"
+                />
+                <img width="50%" src="/Assets/Project3/needfinding.jpg" />
+              </Stack>
+              <p>
+                <h2>POV</h2>
+              </p>
+              <Stack direction={"row"}>
+                <p width="50%">
+                  Since it is a product for young people and people who have
+                  long distance friendships, we interviewed Matthew, who is 20
+                  year old, to know more about what he expects from virtual
+                  party room. He revealed that he found it difficult to have fun
+                  with his friends and meet new people during the COVID
+                  pandemic, and because of that he barely learned any new thing
+                  from other people. He hoped that there would be a place for
+                  him to immerse himself in a social situation and have fun.
+                </p>
+                <img width="50%" src="/Assets/Project3/POV.jpg" />
+              </Stack>
+              <p>
+                <h2>Ideate</h2>
+              </p>
+              <Stack direction="row">
+                <p width="50%">
+                  <h3>Brainstorming</h3>
+                  We had a meeting to discuss what VR experience should we bring
+                  to the users, for example, what should be included in the VR
+                  world and what should not. The brainstorming diagram shows
+                  what we discussed in the meeting.
+                </p>
+                <img
+                  width="50%"
+                  src="https://lh4.googleusercontent.com/lrNACx6HKwnZth0hlc_POBTutHYdWzxBd3_G67oJh7eu7ZN6cburBaRPrzSwJIWmF9sydTzYRq0mHkbBxbxt0nDcfJ5RQ2Fx-MnKHE5AMykr9Grd04UobCIDDIP1ypIroWtqwy06rTdWOJz7gPpAUQ"
+                />
+              </Stack>
+              <p>
+                <h3>Storyboard {"&"} Speed dating</h3>
+                We also have a storyboard to explain the idea of our virtual
+                party room to potential users. Ka Fai showed the storyboard to
+                some potential users and received some feedbacks. The feedbacks
+                included that we should have a specific theme for the party room
+                and simplicity is the key since users might not have enough VR
+                experience.
+              </p>
+              <Stack direction={"row"}>
+                <img
+                  width={"50%"}
+                  src="https://lh3.googleusercontent.com/OgFjkZNvKrGVvSXhhSN7Mawe9CMim2VoEsF7poAglH_IYNjAARG2eN0_e-Fhh6tJadkX8XERuINOXKVpMgN4Wjxui67svC4krSAklPn8QkfjXRKRDVhf6vDrxF-SIYA-kfbs6Ua3XLNO5Kg65rOW1Q"
+                />
+                <img width={"50%"} src="/Assets/Project3/Speeddating.jpg" />
+              </Stack>
+              <p>
+                <h2>Prototype</h2>
+              </p>
+              <p>
+                The party room is inside a tower that is built using Blender. We
+                tried to look for a 3D tower model on Sketchfab but there were
+                not a suitable one for our VR project. We designed our own tower
+                with transparent windows that allow users to see the view
+                outside the tower. The tower is surround by a 360 Time Square
+                panorama image that makes the VR experience more immensible and
+                lively. We also implemented some waypoints for users to jump
+                around in the VR world. There are also some movement restrictive
+                waypoints to simulate the action of sitting on a chair or
+                sitting on a sofa. Media frame served as the major part of our
+                project. One of the biggest benefits of Mozilla Hubs is that we
+                can share our screen and project images or videos in the VR
+                world, and we made use of the feature to offer more interactive
+                features to the users.
+              </p>
+              <p>
+                Below is the demo video of our VR project. Feel free to have a
+                look.
+              </p>
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/kX171Ok-EGY"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+              <p>
+                Also, feel free visit the below link to try out our VR party
+                room
+              </p>
+              <Link href="https://hubs.mozilla.com/NbLM3Da/coordinated-mindless-area">
+                Party on Cloud Nine
+              </Link>
+              <p>
+                <h2>Evaluation</h2>
+              </p>
+              <p>
+                After publishing the prototype, we invited some friends to help
+                us evaluate the VR experience we offer in the virtual party
+                room. The results showed that majority of the respondents were
+                satisfied with the experience they had in the party room. Also,
+                they also provided some positive feedbacks for us to improve the
+                VR experience. For example, more visuals, more interactive
+                features and better lightings. Some respondents also suggested
+                us to embed some card games or interactive games in the party
+                room. We also listened to their feedbacks and worked on bringing
+                more features to the party room, like making a photo booth for
+                taking pictures and a sofa for playing games and watching
+                movies.
+              </p>
+              <Stack direction={"row"}>
+                <img width={"50%"} src="/Assets/Project3/Evaluation1.jpg" />
+                <img width={"50%"} src="/Assets/Project3/Evaluation2.jpg" />
+              </Stack>
+              <p>
+                <h2>Reflection</h2>
+              </p>
+              <p>
+                Throughout the project, I have learnt the importance of
+                human-centered design. We tried to build a virtual party room
+                that can simulate the experience people have in real party rooms
+                and our evaluation showed that we successfully delivered our
+                goal. I have also learned the importance of good communication
+                as we started the project early and found out that there is no
+                version control and a github for Mozilla Hubs projects and we
+                had to talk about our own progresses to other group mates.
+                Through good communication, we managed to finish our VR project
+                in time and delivered a good demonstration during the lesson. I
+                have had fun doing projects with my group mates. Since it is the
+                end of the HCI course, I wish my group mates all the best and
+                hope they can perform well in other courses.
+              </p>
+            </div>
+          </Typography>
         </TabPanel>
       </Box>
     </div>
